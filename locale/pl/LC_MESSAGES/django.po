@@ -15,17 +15,17 @@
 # Darek “NeroPcStation” NeroPcStation <dareknowacki2001@gmail.com>, 2018
 # Krzysztof Kulesza <github@cmza.pl>, 2020
 # Marcin S <dzidek1003@o2.pl>, 2021
-# Valdnet, 2022
 # Eryk Michalak <gnu.ewm@protonmail.com>, 2023
+# Valdnet, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-18 02:36+0000\n"
+"POT-Creation-Date: 2023-09-20 02:54+0000\n"
 "PO-Revision-Date: 2016-09-05 12:43+0000\n"
-"Last-Translator: Eryk Michalak <gnu.ewm@protonmail.com>, 2023\n"
+"Last-Translator: Valdnet, 2023\n"
 "Language-Team: Polish (https://app.transifex.com/nextcloud/teams/64236/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -592,6 +592,8 @@ msgstr "Wydania Nextcloud"
 
 #: nextcloudappstore/core/templates/403.html:4
 #: nextcloudappstore/core/templates/403.html:8
+#: nextcloudappstore/core/templates/429.html:4
+#: nextcloudappstore/core/templates/429.html:8
 msgid "Forbidden"
 msgstr "Zabronione"
 
@@ -610,6 +612,10 @@ msgstr "Nie znaleziono strony"
 #: nextcloudappstore/core/templates/404.html:10
 msgid "The page you are looking for does not exist!"
 msgstr "Strona, której szukasz nie istnieje!"
+
+#: nextcloudappstore/core/templates/429.html:10
+msgid "Too many tries. Try again in a few minutes."
+msgstr "Zbyt wiele prób. Spróbuj ponownie za kilka minut."
 
 #: nextcloudappstore/core/templates/account/email/email_confirmation_message.txt:1
 #, python-format

@@ -14,18 +14,18 @@
 # Alexander Gabilondo <alexgabi@disroot.org>, 2020
 # assar <asier.sarasua@gmail.com>, 2020
 # Beñat Irazabal <birazabal@gmail.com>, 2020
-# Gontzal Pujana Onaindia <juchuf@gmail.com>, 2022
 # Mikel Gartzia <mikelgs@ni.eus>, 2023
 # Make Irigoyen <make@ni.eus>, 2023
+# Gontzal Pujana Onaindia <juchuf@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-18 02:36+0000\n"
+"POT-Creation-Date: 2023-09-10 02:56+0000\n"
 "PO-Revision-Date: 2016-09-05 12:43+0000\n"
-"Last-Translator: Make Irigoyen <make@ni.eus>, 2023\n"
+"Last-Translator: Gontzal Pujana Onaindia <juchuf@gmail.com>, 2023\n"
 "Language-Team: Basque (https://app.transifex.com/nextcloud/teams/64236/eu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -588,6 +588,8 @@ msgstr "Nextcloud bertsioak"
 
 #: nextcloudappstore/core/templates/403.html:4
 #: nextcloudappstore/core/templates/403.html:8
+#: nextcloudappstore/core/templates/429.html:4
+#: nextcloudappstore/core/templates/429.html:8
 msgid "Forbidden"
 msgstr "Debekatuta"
 
@@ -606,6 +608,10 @@ msgstr "Orria ez da aurkitu"
 #: nextcloudappstore/core/templates/404.html:10
 msgid "The page you are looking for does not exist!"
 msgstr "Bilatzen ari zaren orria ez da existitzen!"
+
+#: nextcloudappstore/core/templates/429.html:10
+msgid "Too many tries. Try again in a few minutes."
+msgstr "Saiakera gehiegi. Saiatu berriro minutu batzutan."
 
 #: nextcloudappstore/core/templates/account/email/email_confirmation_message.txt:1
 #, python-format

@@ -14,15 +14,16 @@
 # Bùi Nhất Vũ <bui4vu@gmail.com>, 2022
 # Andy Scherzinger <info@andy-scherzinger.de>, 2022
 # Phạm Trường Vĩnh, 2023
+# Dương Cao, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-18 02:36+0000\n"
+"POT-Creation-Date: 2023-09-20 02:54+0000\n"
 "PO-Revision-Date: 2016-09-05 12:43+0000\n"
-"Last-Translator: Phạm Trường Vĩnh, 2023\n"
+"Last-Translator: Dương Cao, 2023\n"
 "Language-Team: Vietnamese (https://app.transifex.com/nextcloud/teams/64236/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -264,7 +265,7 @@ msgstr "Tích hợp (i.e. Outlook plugin)"
 
 #: nextcloudappstore/core/models.py:122
 msgid "Used to approve integrations"
-msgstr ""
+msgstr "Được sử dụng để phê duyệt các tích hợp"
 
 #: nextcloudappstore/core/models.py:125 nextcloudappstore/core/models.py:269
 #: nextcloudappstore/core/models.py:340 nextcloudappstore/core/models.py:419
@@ -366,7 +367,7 @@ msgstr "Integer bit nhỏ nhất"
 
 #: nextcloudappstore/core/models.py:355
 msgid "e.g. 32 for 32-bit Integers"
-msgstr ""
+msgstr "vd. 32 cho số nguyên 32-bit"
 
 #: nextcloudappstore/core/models.py:357
 msgid "Archive download URL"
@@ -588,6 +589,8 @@ msgstr "Các phiên bản Nextcloud"
 
 #: nextcloudappstore/core/templates/403.html:4
 #: nextcloudappstore/core/templates/403.html:8
+#: nextcloudappstore/core/templates/429.html:4
+#: nextcloudappstore/core/templates/429.html:8
 msgid "Forbidden"
 msgstr "Bị cấm"
 
@@ -607,6 +610,10 @@ msgstr "Trang không tìm thấy"
 msgid "The page you are looking for does not exist!"
 msgstr "Trang mà bạn đang tìm không tồn tại!"
 
+#: nextcloudappstore/core/templates/429.html:10
+msgid "Too many tries. Try again in a few minutes."
+msgstr "Thao tác quá nhiều. Hãy thử lại sau vài phút."
+
 #: nextcloudappstore/core/templates/account/email/email_confirmation_message.txt:1
 #, python-format
 msgid ""
@@ -618,6 +625,13 @@ msgid ""
 "\n"
 "If you do not have an account at %(site_domain)s, simply ignore this message.\n"
 msgstr ""
+"Lời xin chào từ%(site_name)s!\n"
+"\n"
+"Bạn nhận được email này bởi vì người dùng %(user_display)s đã liên kết địa chỉ email này với tài khoản của họ tại %(site_domain)s.\n"
+"\n"
+"Để xác nhận hành động này là đúng, hãy truy cập %(activate_url)s\n"
+"\n"
+"Nếu bạn không có tài khoản tại %(site_domain)s, hãy đơn giản bỏ qua email này.\n"
 
 #: nextcloudappstore/core/templates/account/email/email_confirmation_message.txt:9
 #, python-format
@@ -631,7 +645,7 @@ msgstr ""
 #: nextcloudappstore/core/templates/account/email_confirm.html:6
 #: nextcloudappstore/core/templates/account/email_confirm.html:11
 msgid "Confirm Email Address"
-msgstr ""
+msgstr "Xác nhận địa chỉ email"
 
 #: nextcloudappstore/core/templates/account/email_confirm.html:17
 #, python-format
@@ -639,6 +653,8 @@ msgid ""
 "Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an email "
 "address for user %(user_display)s."
 msgstr ""
+"Vui lòng xác nhận rằng <a href=\"mailto:%(email)s\">%(email)s</a> là địa chỉ"
+" email của người dùng %(user_display)s."
 
 #: nextcloudappstore/core/templates/account/email_confirm.html:21
 msgid "Confirm"
@@ -650,6 +666,8 @@ msgid ""
 "This email confirmation link expired or is invalid. Please <a "
 "href=\"%(email_url)s\">issue a new email confirmation request</a>."
 msgstr ""
+"Liên kết xác nhận email này đã quá hạn hoặc không hợp lệ. Vui lòng <a "
+"href=\"%(email_url)s\">gửi yêu cầu xác nhận email mới</a>."
 
 #: nextcloudappstore/core/templates/account/login.html:5
 #: nextcloudappstore/core/templates/account/login.html:17
@@ -690,6 +708,8 @@ msgid ""
 "Forgotten your password? Enter your email address below, and we'll send you "
 "an email allowing you to reset it."
 msgstr ""
+"Quên mật khẩu? Nhập địa chỉ email của bạn phía dưới, chúng tôi sẽ gửi cho "
+"bạn một email để đặt lại mật khẩu."
 
 #: nextcloudappstore/core/templates/account/password_reset.html:22
 msgid "Reset My Password"
@@ -873,7 +893,7 @@ msgstr "Tích hợp cho đăng ký"
 #: nextcloudappstore/core/templates/app/integration_scaffold.html:4
 #: nextcloudappstore/core/templates/app/integration_scaffold.html:8
 msgid "Moderate integration"
-msgstr ""
+msgstr "Tích hợp vừa phải"
 
 #: nextcloudappstore/core/templates/app/integration_scaffold.html:4
 #: nextcloudappstore/core/templates/app/integration_scaffold.html:8
@@ -904,7 +924,7 @@ msgstr "Mới nhất"
 #: nextcloudappstore/core/templates/app/list.html:21
 #: nextcloudappstore/core/templates/app/list.html:23
 msgid "Alphabetically"
-msgstr ""
+msgstr "Theo bảng chữ cái"
 
 #: nextcloudappstore/core/templates/app/list.html:33
 msgid "My apps"
@@ -1060,15 +1080,15 @@ msgstr "vùng bắt buộc"
 #: nextcloudappstore/core/templates/nav.html:15
 #, python-format
 msgid "Search in %(category)s"
-msgstr ""
+msgstr "Tìm kiếm trong %(category)s"
 
 #: nextcloudappstore/core/templates/nav.html:15
 msgid "Search in featured apps"
-msgstr ""
+msgstr "Tìm kiếm trong Ứng dụng nổi bật"
 
 #: nextcloudappstore/core/templates/nav.html:15
 msgid "Search in all apps"
-msgstr ""
+msgstr "Tìm kiếm trong Tất cả ứng dụng"
 
 #: nextcloudappstore/core/templates/nav.html:23
 #: nextcloudappstore/core/templates/translation/db_translations.txt:19
@@ -1089,19 +1109,19 @@ msgstr "Tài liệu"
 
 #: nextcloudappstore/core/templates/nav.html:51
 msgid "Upload your app"
-msgstr ""
+msgstr "Tải lên ứng dụng của bạn"
 
 #: nextcloudappstore/core/templates/nav.html:54
 msgid "Developer resources"
-msgstr ""
+msgstr "Tài nguyên dành cho nhà phát triển"
 
 #: nextcloudappstore/core/templates/nav.html:57
 msgid "Request translations"
-msgstr ""
+msgstr "Yêu cầu bản dịch"
 
 #: nextcloudappstore/core/templates/nav.html:75
 msgid "Integration developer"
-msgstr ""
+msgstr "Nhà phát triển Tích hợp"
 
 #: nextcloudappstore/core/templates/nav.html:88
 msgid "Admin"
@@ -1142,7 +1162,7 @@ msgstr "Bảng thông tin"
 
 #: nextcloudappstore/core/templates/translation/db_translations.txt:4
 msgid "Apps including Nextcloud Dashboard widgets"
-msgstr ""
+msgstr "Ứng dụng bao gồm Tiện ích Nextcloud Dashboard"
 
 #: nextcloudappstore/core/templates/translation/db_translations.txt:5
 msgid "Files"
@@ -1199,7 +1219,7 @@ msgstr "Tổ chức"
 
 #: nextcloudappstore/core/templates/translation/db_translations.txt:18
 msgid "Time management, To-Do list and calendar apps"
-msgstr ""
+msgstr "Quản lý thời gian, danh sách việc cần làm và ứng dụng lịch"
 
 #: nextcloudappstore/core/templates/translation/db_translations.txt:20
 msgid "Search related apps"
@@ -1280,7 +1300,7 @@ msgstr "Tên đầy đủ của tác giả "
 
 #: nextcloudappstore/scaffolding/forms.py:50
 msgid "Author's email"
-msgstr ""
+msgstr "Email của tác giả"
 
 #: nextcloudappstore/scaffolding/forms.py:51
 #: nextcloudappstore/scaffolding/forms.py:83
@@ -1314,6 +1334,9 @@ msgid ""
 "you to check in with you about your plans or to ask for feedback on our "
 "developer program."
 msgstr ""
+"Tôi chọn tham gia thu thập dữ liệu cá nhân của mình. Sau đó, chúng tôi có "
+"thể liên hệ với bạn để kiểm tra với bạn về các kế hoạch của bạn hoặc để yêu "
+"cầu phản hồi về chương trình dành cho nhà phát triển của chúng tôi."
 
 #: nextcloudappstore/scaffolding/forms.py:82
 #: nextcloudappstore/user/templates/user/integrations.html:13
@@ -1361,7 +1384,7 @@ msgstr "Địa chỉ email của bạn"
 
 #: nextcloudappstore/user/forms.py:39
 msgid "The given email address does not match your email address"
-msgstr ""
+msgstr "Địa chỉ email đã nhập không khớp với địa chỉ email của bạn"
 
 #: nextcloudappstore/user/forms.py:45
 msgid "Confirm password"
@@ -1379,7 +1402,7 @@ msgstr ""
 
 #: nextcloudappstore/user/forms.py:63
 msgid "This email address is already associated with another account."
-msgstr ""
+msgstr "Địa chỉ email này đã được liên kết với tài khoản khác."
 
 #: nextcloudappstore/user/forms.py:72
 msgid "Invalid password"
@@ -1391,13 +1414,15 @@ msgstr "Địa chỉ thư điện tử"
 
 #: nextcloudappstore/user/signals.py:29
 msgid "Nextcloud app store password changed"
-msgstr ""
+msgstr "Mật khẩu Cửa hàng ứng dụng Nextcloud đã thay đổi"
 
 #: nextcloudappstore/user/signals.py:30
 msgid ""
 "Your Nextcloud app store password has changed. Contact support if this was "
 "not you."
 msgstr ""
+"Mật khẩu Cửa hàng ứng dụng Nextcloud đã thay đổi. Liên hệ với bộ phận hỗ trợ"
+" nếu đây không phải là bạn."
 
 #: nextcloudappstore/user/templates/user/account.html:12
 msgid "Save"
@@ -1416,6 +1441,10 @@ msgid ""
 "                Make sure to keep it secret. A new token can be generated below, rendering the old token invalid.\n"
 "            "
 msgstr ""
+"\n"
+"                Mã thông báo API có thể được sử dụng khi gọi Cửa hàng ứng dụng Nextcloud\n"
+"                <a href=\"https://nextcloudappstore.readthedocs.io/en/latest/restapi.html\">REST API</a>.\n"
+"                Hãy chắc chắn giữ nó bí mật. Mã thông mới có thể được tạo bên dưới, sẽ khiến mã thông cũ không hợp lệ."
 
 #: nextcloudappstore/user/templates/user/api-token.html:22
 msgid "Your API token is:"
@@ -1467,10 +1496,13 @@ msgid ""
 "delete your account, insert your email address into the input field and "
 "click the \"Delete account\" button."
 msgstr ""
+"Xóa tài khoản của bạn cũng sẽ xóa tất cả các ứng dụng và bản phát hành của "
+"bạn. Để xóa tài khoản của bạn, hãy nhập địa chỉ email của bạn vào trường "
+"nhập và nhấp vào nút \"Xóa tài khoản\"."
 
 #: nextcloudappstore/user/templates/user/integrations.html:9
 msgid "Pending approval"
-msgstr ""
+msgstr "Đang chờ phê duyệt"
 
 #: nextcloudappstore/user/templates/user/integrations.html:14
 #: nextcloudappstore/user/templates/user/integrations.html:37
@@ -1483,7 +1515,7 @@ msgstr "Xem"
 
 #: nextcloudappstore/user/templates/user/integrations.html:31
 msgid "Your integrations"
-msgstr ""
+msgstr "Tích hợp của bạn"
 
 #: nextcloudappstore/user/templates/user/integrations.html:45
 msgid "Edit"
@@ -1492,7 +1524,7 @@ msgstr "Chỉnh sửa"
 #: nextcloudappstore/user/templates/user/integrations.html:52
 msgid ""
 "You have not submitted any integration yet or they are pending approval!"
-msgstr ""
+msgstr "Bạn chưa gửi bất kỳ tích hợp nào hoặc chúng đang chờ phê duyệt!"
 
 #: nextcloudappstore/user/templates/user/password.html:10
 msgid "Changing your password will also regenerate your API token!"

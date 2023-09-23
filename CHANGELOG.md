@@ -2,6 +2,58 @@
 
 ## [Unreleased]
 
+## [4.3.3]  - 2023-09-29
+
+### Changed
+
+- **Node.js:** Now requires `v20` or higher.
+- **npm:** Now requires `v9` or higher.
+- Updated python dependencies.
+- Updated `highlight.js` dependency to last major version. #1063
+
+## [4.3.2]  - 2023-09-23
+
+### Added
+
+- Support of `Last-Modified`, e.g. `If-Modified-Since:` header for the Rest API endpoints. #1147
+- `redis` python dependency for `django-allauth`.
+
+### Changed
+
+- `/api/v1/apps.json` endpoint now ALWAYS return gzipped data. #1147
+
+## [4.3.1]  - 2023-09-19
+
+### Changed
+
+- Replaced `psycopg2` with new `psycopg` package. #1143
+- Updated dependencies & packages. #1129
+
+## [4.3.0]  - 2023-09-07
+
+### Changed
+
+- Replaced `django-cors-middleware` package with `django-cors-headers`
+- Updated Django from `3.2` to `4.2.5` version.
+
+### Fixed
+
+- Bug in REST API for deleting releases when APP_ID contains number. #1127
+
+## [4.2.0]  - 2023-07-18
+
+### Changed
+
+- Dropped Python 3.7/3.8 support
+- Updated dependencies & packages.
+
+### Fixed
+
+- Added default bruteforce login protection. #1087
+- Added rate limit to `API token generating`. #1088
+- Added `Password reset` rate limit configuration. #1077
+- Forced user logout after 15 failed attempts to change password. #1078
+
 ## [4.1.0]  - 2023-05-18
 
 ### Added

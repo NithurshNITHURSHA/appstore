@@ -32,6 +32,8 @@
 # Jack Frost, 2022
 # Mmmm Heee, 2022
 # Dasferco, 2022
+# jipiyan, 2023
+# User Windows, 2023
 # Aris L., 2023
 # 
 #, fuzzy
@@ -39,7 +41,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-21 02:33+0000\n"
+"POT-Creation-Date: 2023-09-08 02:54+0000\n"
 "PO-Revision-Date: 2016-09-05 12:43+0000\n"
 "Last-Translator: Aris L., 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/nextcloud/teams/64236/zh_CN/)\n"
@@ -69,17 +71,17 @@ msgstr "下载"
 #: nextcloudappstore/core/forms.py:16
 #: nextcloudappstore/core/templates/app/detail.html:196
 msgid "Bad"
-msgstr "坏的"
+msgstr "不佳"
 
 #: nextcloudappstore/core/forms.py:16
 #: nextcloudappstore/core/templates/app/detail.html:195
 msgid "OK"
-msgstr "好"
+msgstr "还可以"
 
 #: nextcloudappstore/core/forms.py:16
 #: nextcloudappstore/core/templates/app/detail.html:194
 msgid "Good"
-msgstr "好的"
+msgstr "不错"
 
 #: nextcloudappstore/core/forms.py:31
 msgid "Download link (tar.gz)"
@@ -175,7 +177,7 @@ msgstr "描述"
 
 #: nextcloudappstore/core/models.py:87 nextcloudappstore/core/models.py:470
 msgid "Will be rendered as Markdown"
-msgstr "将呈现为 Markdown"
+msgstr "将渲染为Markdown"
 
 #: nextcloudappstore/core/models.py:90
 msgid "User documentation URL"
@@ -272,7 +274,7 @@ msgstr "若启用，用户可以使用公钥和签名重新注册应用。这样
 
 #: nextcloudappstore/core/models.py:121
 msgid "Integration (i.e. Outlook plugin)"
-msgstr "集成（例如 Outlook 插件）"
+msgstr "集成（例如Outlook插件）"
 
 #: nextcloudappstore/core/models.py:122
 msgid "Used to approve integrations"
@@ -353,11 +355,11 @@ msgstr "授权"
 
 #: nextcloudappstore/core/models.py:349
 msgid "Shell command dependency"
-msgstr "Shell 命令依赖"
+msgstr "Shell命令依赖"
 
 #: nextcloudappstore/core/models.py:350
 msgid "PHP version requirement"
-msgstr "PHP 版本要求"
+msgstr "PHP版本要求"
 
 #: nextcloudappstore/core/models.py:351
 msgid "Platform version requirement"
@@ -435,16 +437,16 @@ msgstr "截图"
 
 #: nextcloudappstore/core/models.py:443 nextcloudappstore/core/models.py:448
 msgid "Shell command"
-msgstr "Shell 命令"
+msgstr "Shell命令"
 
 #: nextcloudappstore/core/models.py:444
 msgid "Name of a required shell command, e.g. grep"
-msgstr "必须提供 Shell 命令的名称，例如：grep"
+msgstr "必须提供Shell命令的名称，例如：grep"
 
 #: nextcloudappstore/core/models.py:449
 #: nextcloudappstore/core/templates/app/releases.html:61
 msgid "Shell commands"
-msgstr "Shell 命令"
+msgstr "Shell命令"
 
 #: nextcloudappstore/core/models.py:461 nextcloudappstore/core/models.py:487
 #: nextcloudappstore/core/models.py:507
@@ -509,7 +511,7 @@ msgstr "数据库依赖"
 
 #: nextcloudappstore/core/models.py:542
 msgid "e.g. libxml"
-msgstr "例如 libxml"
+msgstr "例如libxml"
 
 #: nextcloudappstore/core/models.py:542 nextcloudappstore/core/models.py:546
 #: nextcloudappstore/core/models.py:559
@@ -544,11 +546,11 @@ msgstr "删除应用程序释放"
 #: nextcloudappstore/core/models.py:606
 #: nextcloudappstore/scaffolding/forms.py:48
 msgid "Nextcloud version"
-msgstr "Nextcloud 版本"
+msgstr "Nextcloud版本"
 
 #: nextcloudappstore/core/models.py:606
 msgid "e.g. 9.0.54"
-msgstr "例如 9.0.54"
+msgstr "例如9.0.54"
 
 #: nextcloudappstore/core/models.py:609
 msgid "Is current version"
@@ -583,14 +585,16 @@ msgstr "如果此版本仍有官方支持（不包括企业支持），设为是
 
 #: nextcloudappstore/core/models.py:637
 msgid "Nextcloud release"
-msgstr "Nextcloud 发布"
+msgstr "Nextcloud发布"
 
 #: nextcloudappstore/core/models.py:638
 msgid "Nextcloud releases"
-msgstr "Nextcloud 发布"
+msgstr "Nextcloud发布"
 
 #: nextcloudappstore/core/templates/403.html:4
 #: nextcloudappstore/core/templates/403.html:8
+#: nextcloudappstore/core/templates/429.html:4
+#: nextcloudappstore/core/templates/429.html:8
 msgid "Forbidden"
 msgstr "禁止"
 
@@ -609,6 +613,10 @@ msgstr "没有找到页面"
 #: nextcloudappstore/core/templates/404.html:10
 msgid "The page you are looking for does not exist!"
 msgstr "您要查找的页面不存在！"
+
+#: nextcloudappstore/core/templates/429.html:10
+msgid "Too many tries. Try again in a few minutes."
+msgstr "尝试次数过多。请几分钟后再试。"
 
 #: nextcloudappstore/core/templates/account/email/email_confirmation_message.txt:1
 #, python-format
@@ -700,7 +708,7 @@ msgstr "密码重置"
 msgid ""
 "Forgotten your password? Enter your email address below, and we'll send you "
 "an email allowing you to reset it."
-msgstr "忘记了你的密码?请在下面输入您的电子邮件地址，我们将发送一封允许你重新设置密码的电子邮件。"
+msgstr "忘记了您的密码？请在下面输入您的电子邮件地址，我们将发送一封允许您重新设置密码的电子邮件。"
 
 #: nextcloudappstore/core/templates/account/password_reset.html:22
 msgid "Reset My Password"
@@ -712,7 +720,7 @@ msgstr "如果重置您的密码出现任何问题，请联系我们。"
 
 #: nextcloudappstore/core/templates/account/password_reset_from_key.html:11
 msgid "Bad API Token"
-msgstr "错误的 API 令牌"
+msgstr "错误的API令牌"
 
 #: nextcloudappstore/core/templates/account/password_reset_from_key.html:11
 #: nextcloudappstore/core/templates/account/password_reset_from_key.html:40
@@ -739,11 +747,11 @@ msgstr "创建账号"
 
 #: nextcloudappstore/core/templates/admin/base_site.html:4
 msgid "Nextcloud App Store admin"
-msgstr "Nextcloud 应用程序商店管理员"
+msgstr "Nextcloud应用程序商店管理员"
 
 #: nextcloudappstore/core/templates/admin/base_site.html:11
 msgid "Nextcloud App Store administration"
-msgstr "Nextcloud 应用程序商店管理员"
+msgstr "Nextcloud应用程序商店管理员"
 
 #: nextcloudappstore/core/templates/app/base.html:11
 #: nextcloudappstore/core/templates/app/list.html:5
@@ -879,7 +887,7 @@ msgstr "注册集成"
 #: nextcloudappstore/core/templates/app/integration_scaffold.html:4
 #: nextcloudappstore/core/templates/app/integration_scaffold.html:8
 msgid "Moderate integration"
-msgstr "Moderate 集成"
+msgstr "Moderate集成"
 
 #: nextcloudappstore/core/templates/app/integration_scaffold.html:4
 #: nextcloudappstore/core/templates/app/integration_scaffold.html:8
@@ -1026,7 +1034,7 @@ msgstr "上传"
 msgid ""
 "The Nextcloud App Store - Upload your apps and install new apps onto your "
 "Nextcloud"
-msgstr "Nextcloud 应用商店 - 上传您的应用并将新应用安装到您的 Nextcloud 上"
+msgstr "Nextcloud应用商店 - 上传您的应用并将新应用安装到您的Nextcloud上"
 
 #: nextcloudappstore/core/templates/base.html:9
 msgid "The Nextcloud Community"
@@ -1057,7 +1065,7 @@ msgstr "必填字段"
 #: nextcloudappstore/core/templates/nav.html:15
 #, python-format
 msgid "Search in %(category)s"
-msgstr "在 %(category)s 中搜索"
+msgstr "在%(category)s中搜索"
 
 #: nextcloudappstore/core/templates/nav.html:15
 msgid "Search in featured apps"
@@ -1155,7 +1163,7 @@ msgstr "游戏"
 
 #: nextcloudappstore/core/templates/translation/db_translations.txt:8
 msgid "Games run in your Nextcloud"
-msgstr "在 Nextcloud 中运行您的游戏"
+msgstr "在Nextcloud中运行您的游戏"
 
 #: nextcloudappstore/core/templates/translation/db_translations.txt:9
 msgid "Integration"
@@ -1163,7 +1171,7 @@ msgstr "集成"
 
 #: nextcloudappstore/core/templates/translation/db_translations.txt:10
 msgid "Apps that connect Nextcloud with other services and platforms"
-msgstr "应用程序连接 Nextcloud 与其他服务和平台"
+msgstr "应用程序连接Nextcloud与其他服务和平台"
 
 #: nextcloudappstore/core/templates/translation/db_translations.txt:11
 msgid "Monitoring"
@@ -1195,7 +1203,7 @@ msgstr "组织"
 
 #: nextcloudappstore/core/templates/translation/db_translations.txt:18
 msgid "Time management, To-Do list and calendar apps"
-msgstr "时间管理、代办清单以及日历应用"
+msgstr "时间管理、待办清单以及日历应用"
 
 #: nextcloudappstore/core/templates/translation/db_translations.txt:20
 msgid "Search related apps"
@@ -1233,7 +1241,7 @@ msgstr "流"
 
 #: nextcloudappstore/core/templates/translation/db_translations.txt:28
 msgid "Apps for Nextcloud Flow"
-msgstr "适用于 Nextcloud 流程的应用"
+msgstr "适用于Nextcloud流程的应用"
 
 #: nextcloudappstore/core/templatetags/app_rating.py:7
 msgid "Very negative"
@@ -1257,11 +1265,11 @@ msgstr "非常好"
 
 #: nextcloudappstore/core/validators.py:6
 msgid "Enter a valid HTTPS URL"
-msgstr "请输入有效的 HTTPS 超链接"
+msgstr "请输入有效的HTTPS超链接"
 
 #: nextcloudappstore/scaffolding/forms.py:38
 msgid "The app name must be camel case e.g. MyApp"
-msgstr "应用名称必须为驼峰式，例如 MyApp"
+msgstr "应用名称必须为驼峰式，例如MyApp"
 
 #: nextcloudappstore/scaffolding/forms.py:44
 #: nextcloudappstore/user/templates/user/transfer-apps.html:15
@@ -1289,7 +1297,7 @@ msgstr "问题报告和特性请求"
 #: nextcloudappstore/scaffolding/forms.py:59
 #: nextcloudappstore/scaffolding/forms.py:93
 msgid "Hold down Ctrl and click to select multiple entries"
-msgstr "按住 Ctrl 键选择多个项目"
+msgstr "按住Ctrl 键选择多个项"
 
 #: nextcloudappstore/scaffolding/forms.py:64
 #: nextcloudappstore/scaffolding/forms.py:98
@@ -1298,14 +1306,14 @@ msgstr "对您的应用程序简单的描述将做为预告呈现出来"
 
 #: nextcloudappstore/scaffolding/forms.py:69
 msgid "Full description of what your app does. Can contain Markdown."
-msgstr "您的应用程序完全的描述，可以包括 Markdown 语法。"
+msgstr "您的应用程序完全的描述，可以包括Markdown语法。"
 
 #: nextcloudappstore/scaffolding/forms.py:73
 msgid ""
 "I opt in for the collection of my personal data. We could then reach out to "
 "you to check in with you about your plans or to ask for feedback on our "
 "developer program."
-msgstr ""
+msgstr "我同意收集我的个人数据。这样我们就可以与您联系，了解您的计划情况，或者征求您对我们的开发者计划的反馈意见。"
 
 #: nextcloudappstore/scaffolding/forms.py:82
 #: nextcloudappstore/user/templates/user/integrations.html:13
@@ -1345,7 +1353,7 @@ msgstr "姓氏"
 
 #: nextcloudappstore/user/forms.py:28
 msgid "Your email address"
-msgstr "你的电子邮件地址 "
+msgstr "您的电子邮件地址 "
 
 #: nextcloudappstore/user/forms.py:39
 msgid "The given email address does not match your email address"
@@ -1376,13 +1384,13 @@ msgstr "电子邮箱 "
 
 #: nextcloudappstore/user/signals.py:29
 msgid "Nextcloud app store password changed"
-msgstr "Nextcloud 应用商店密码已更改"
+msgstr "Nextcloud应用商店密码已更改"
 
 #: nextcloudappstore/user/signals.py:30
 msgid ""
 "Your Nextcloud app store password has changed. Contact support if this was "
 "not you."
-msgstr "你的 Nextcloud 应用商店密码已更改。如果你未进行更改，请联系支持人员。"
+msgstr "您的Nextcloud应用商店密码已更改。如果你未进行更改，请联系支持人员。"
 
 #: nextcloudappstore/user/templates/user/account.html:12
 msgid "Save"
@@ -1391,7 +1399,7 @@ msgstr "保存"
 #: nextcloudappstore/user/templates/user/api-token.html:9
 #: nextcloudappstore/user/templates/user/api-token.html:12
 msgid "API Token"
-msgstr "API 令牌"
+msgstr "API令牌"
 
 #: nextcloudappstore/user/templates/user/api-token.html:15
 msgid ""
@@ -1401,18 +1409,23 @@ msgid ""
 "                Make sure to keep it secret. A new token can be generated below, rendering the old token invalid.\n"
 "            "
 msgstr ""
+"\n"
+"                API令牌可用于在调用Nextcloud应用商店时进行身份验证\n"
+"                <a href=\"https://nextcloudappstore.readthedocs.io/en/latest/restapi.html\">REST API</a>.\n"
+"                请确保对令牌保密。可以在下方生成新的令牌，使旧的令牌失效。\n"
+"            "
 
 #: nextcloudappstore/user/templates/user/api-token.html:22
 msgid "Your API token is:"
-msgstr "您的 API 令牌是："
+msgstr "您的API令牌是："
 
 #: nextcloudappstore/user/templates/user/api-token.html:27
 msgid "New API token generated."
-msgstr "生成新的 API 令牌"
+msgstr "生成新的API令牌"
 
 #: nextcloudappstore/user/templates/user/api-token.html:32
 msgid "Regenerate API token"
-msgstr "重新生成 API 令牌"
+msgstr "重新生成API令牌"
 
 #: nextcloudappstore/user/templates/user/base.html:15
 #: nextcloudappstore/user/templates/user/integrations.html:5
@@ -1437,7 +1450,7 @@ msgstr "密码"
 
 #: nextcloudappstore/user/templates/user/base.html:29
 msgid "API token"
-msgstr "API 令牌"
+msgstr "API令牌"
 
 #: nextcloudappstore/user/templates/user/base.html:32
 #: nextcloudappstore/user/templates/user/delete-account.html:5
@@ -1468,7 +1481,7 @@ msgstr "查看"
 
 #: nextcloudappstore/user/templates/user/integrations.html:31
 msgid "Your integrations"
-msgstr "你的集成"
+msgstr "您的集成"
 
 #: nextcloudappstore/user/templates/user/integrations.html:45
 msgid "Edit"
@@ -1481,7 +1494,7 @@ msgstr "您尚未提交任何集成，或者它们正在等待批准！"
 
 #: nextcloudappstore/user/templates/user/password.html:10
 msgid "Changing your password will also regenerate your API token!"
-msgstr "修改您的密码同时会重新生成 API 秘钥！"
+msgstr "修改您的密码同时会重新生成API令牌！"
 
 #: nextcloudappstore/user/templates/user/password.html:17
 msgid ""
@@ -1515,7 +1528,7 @@ msgstr "解锁转移"
 
 #: nextcloudappstore/user/templates/user/transfer-apps.html:26
 msgid "Locked, no transfer possible"
-msgstr "锁定，不可转移"
+msgstr "已锁定，不可转移"
 
 #: nextcloudappstore/user/templates/user/transfer-apps.html:33
 msgid "Lock ownership transfer"

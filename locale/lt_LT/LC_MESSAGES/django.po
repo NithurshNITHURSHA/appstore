@@ -12,15 +12,16 @@
 # Jokubas Dargis <jokubuidargiui@protonmail.com>, 2019
 # Vytautas Simanaitis <vyt.sima@gmail.com>, 2020
 # Moo, 2022
+# Liudas LT, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-18 02:36+0000\n"
+"POT-Creation-Date: 2023-09-06 03:13+0000\n"
 "PO-Revision-Date: 2016-09-05 12:43+0000\n"
-"Last-Translator: Moo, 2022\n"
+"Last-Translator: Liudas LT, 2023\n"
 "Language-Team: Lithuanian (Lithuania) (https://app.transifex.com/nextcloud/teams/64236/lt_LT/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,7 +35,7 @@ msgstr "Naujausios programėlės laidos"
 
 #: nextcloudappstore/core/feeds.py:15
 msgid "Get the newest app release updates"
-msgstr ""
+msgstr "Gauti naujausius programėlės atnaujinimu"
 
 #: nextcloudappstore/core/feeds.py:38
 msgid "Changes"
@@ -198,7 +199,7 @@ msgstr "Programėlės savininkas"
 #: nextcloudappstore/core/models.py:102
 #: nextcloudappstore/core/templates/app/detail.html:84
 msgid "Co-Maintainers"
-msgstr ""
+msgstr "Prižiūrėtojas"
 
 #: nextcloudappstore/core/models.py:104 nextcloudappstore/core/models.py:335
 msgid "App authors"
@@ -358,7 +359,7 @@ msgstr "Minimalus bitų skaičius"
 
 #: nextcloudappstore/core/models.py:355
 msgid "e.g. 32 for 32-bit Integers"
-msgstr ""
+msgstr "pvz. 32 atitinka 32 bitų sveikuosius skaičius"
 
 #: nextcloudappstore/core/models.py:357
 msgid "Archive download URL"
@@ -546,7 +547,7 @@ msgstr ""
 
 #: nextcloudappstore/core/models.py:619
 msgid "Has a release"
-msgstr ""
+msgstr "Programa išleista"
 
 #: nextcloudappstore/core/models.py:621
 msgid ""
@@ -575,6 +576,8 @@ msgstr "Nextcloud laidos"
 
 #: nextcloudappstore/core/templates/403.html:4
 #: nextcloudappstore/core/templates/403.html:8
+#: nextcloudappstore/core/templates/429.html:4
+#: nextcloudappstore/core/templates/429.html:8
 msgid "Forbidden"
 msgstr "Uždrausta"
 
@@ -593,6 +596,10 @@ msgstr "Puslapis nerastas"
 #: nextcloudappstore/core/templates/404.html:10
 msgid "The page you are looking for does not exist!"
 msgstr "Puslapio, kurio ieškote, nėra!"
+
+#: nextcloudappstore/core/templates/429.html:10
+msgid "Too many tries. Try again in a few minutes."
+msgstr ""
 
 #: nextcloudappstore/core/templates/account/email/email_confirmation_message.txt:1
 #, python-format
@@ -801,7 +808,7 @@ msgstr "Pranešti apie problemą"
 
 #: nextcloudappstore/core/templates/app/detail.html:148
 msgid "Request feature"
-msgstr ""
+msgstr "Prašyti funkcionalumo"
 
 #: nextcloudappstore/core/templates/app/detail.html:155
 msgid "Ask questions or discuss"
@@ -813,7 +820,7 @@ msgstr "Įvertinkite programėlę"
 
 #: nextcloudappstore/core/templates/app/detail.html:161
 msgid "Rate integration"
-msgstr ""
+msgstr "Įvertinti integraciją"
 
 #: nextcloudappstore/core/templates/app/detail.html:169
 msgid "Rate"
@@ -850,17 +857,17 @@ msgstr "Rodyti įvertinimų komentarus:"
 #: nextcloudappstore/core/templates/app/integration_scaffold.html:8
 #: nextcloudappstore/core/templates/nav.html:79
 msgid "Register integration"
-msgstr ""
+msgstr "Registruoti integraciją"
 
 #: nextcloudappstore/core/templates/app/integration_scaffold.html:4
 #: nextcloudappstore/core/templates/app/integration_scaffold.html:8
 msgid "Moderate integration"
-msgstr ""
+msgstr "Peržiūrėti integraciją"
 
 #: nextcloudappstore/core/templates/app/integration_scaffold.html:4
 #: nextcloudappstore/core/templates/app/integration_scaffold.html:8
 msgid "Edit integration"
-msgstr ""
+msgstr "Redaguoti integraciją"
 
 #: nextcloudappstore/core/templates/app/integration_scaffold.html:14
 msgid "Update"
@@ -1068,11 +1075,11 @@ msgstr "Dokumentacija"
 
 #: nextcloudappstore/core/templates/nav.html:51
 msgid "Upload your app"
-msgstr ""
+msgstr "Įkelti savo programėlę"
 
 #: nextcloudappstore/core/templates/nav.html:54
 msgid "Developer resources"
-msgstr ""
+msgstr "Kūrėjo ištekliai"
 
 #: nextcloudappstore/core/templates/nav.html:57
 msgid "Request translations"
@@ -1080,7 +1087,7 @@ msgstr "Prašyti vertimų"
 
 #: nextcloudappstore/core/templates/nav.html:75
 msgid "Integration developer"
-msgstr ""
+msgstr "Integracijos kūrėjas"
 
 #: nextcloudappstore/core/templates/nav.html:88
 msgid "Admin"
@@ -1302,7 +1309,7 @@ msgstr ""
 #: nextcloudappstore/user/templates/user/integrations.html:13
 #: nextcloudappstore/user/templates/user/integrations.html:36
 msgid "Integration name"
-msgstr ""
+msgstr "Integracijos pavadinimas"
 
 #: nextcloudappstore/scaffolding/forms.py:101
 msgid "Screenshot URL"
@@ -1310,7 +1317,7 @@ msgstr "Ekrano kopijos URL"
 
 #: nextcloudappstore/scaffolding/forms.py:101
 msgid "URL for integration screenshot"
-msgstr ""
+msgstr "Integracijos nuotraukos URL"
 
 #: nextcloudappstore/scaffolding/forms.py:105
 msgid "Screenshot thumbnail URL"
@@ -1321,10 +1328,14 @@ msgid ""
 "URL for integration screenshot in smaller dimensions. Must be used in "
 "combination with a larger screenshot."
 msgstr ""
+"Mažesnio dydžio integracijos nuotraukos URL. Turi būti naudojama kartu su "
+"didesne nuotrauka."
 
 #: nextcloudappstore/scaffolding/forms.py:118
 msgid "Full description of what your integration does. Can contain Markdown."
 msgstr ""
+"Pilnas integracijos funkcionalumo aprašymas. Gali būti pateikiamos ir "
+"pastabos."
 
 #: nextcloudappstore/user/forms.py:18
 msgid "First name"
@@ -1370,13 +1381,15 @@ msgstr "El. pašto adresas"
 
 #: nextcloudappstore/user/signals.py:29
 msgid "Nextcloud app store password changed"
-msgstr ""
+msgstr "Nextcloud Appstore slaptažodis pakeistas"
 
 #: nextcloudappstore/user/signals.py:30
 msgid ""
 "Your Nextcloud app store password has changed. Contact support if this was "
 "not you."
 msgstr ""
+"Jūsų Appstore slaptažodis buvo pakeistas. Susisiekite su pagalba, jei jūs "
+"slaptažodžio nekeitėte."
 
 #: nextcloudappstore/user/templates/user/account.html:12
 msgid "Save"
@@ -1449,7 +1462,7 @@ msgstr ""
 
 #: nextcloudappstore/user/templates/user/integrations.html:9
 msgid "Pending approval"
-msgstr ""
+msgstr "Laukiama patvirtinimo"
 
 #: nextcloudappstore/user/templates/user/integrations.html:14
 #: nextcloudappstore/user/templates/user/integrations.html:37
@@ -1462,7 +1475,7 @@ msgstr "Rodyti"
 
 #: nextcloudappstore/user/templates/user/integrations.html:31
 msgid "Your integrations"
-msgstr ""
+msgstr "Jūsų integracijos"
 
 #: nextcloudappstore/user/templates/user/integrations.html:45
 msgid "Edit"
@@ -1471,7 +1484,7 @@ msgstr "Taisyti"
 #: nextcloudappstore/user/templates/user/integrations.html:52
 msgid ""
 "You have not submitted any integration yet or they are pending approval!"
-msgstr ""
+msgstr "Nėra įkaltų integracijų arba jos laukia patvirtinimo!"
 
 #: nextcloudappstore/user/templates/user/password.html:10
 msgid "Changing your password will also regenerate your API token!"

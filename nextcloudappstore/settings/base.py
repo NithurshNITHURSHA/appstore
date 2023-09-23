@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
+import os
 import pathlib
 
 from django.conf.global_settings import LANGUAGES
@@ -61,7 +62,7 @@ ROOT_URLCONF = "nextcloudappstore.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR / "templates"],
+        "DIRS": [os.path.join(BASE_DIR, "templates")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -119,8 +120,11 @@ REST_FRAMEWORK = {
     "DEFAULT_THROTTLE_RATES": {
         "app_upload": "100/day",
         "app_register": "100/day",
+        "api_token_gen": "30/minute",
     },
 }
+
+ACCOUNT_RATE_LIMITS = {"reset_password": "1/m"}
 
 SITE_ID = 1
 
@@ -135,7 +139,7 @@ ACCOUNT_CONFIRM_EMAIL_ON_GET = True
 ACCOUNT_SIGNUP_FORM_CLASS = "nextcloudappstore.user.forms.SignupFormRecaptcha"
 ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION = True
 ACCOUNT_LOGOUT_ON_PASSWORD_CHANGE = True
-PASSWORD_RESET_TIMEOUT_DAYS = 1
+PASSWORD_RESET_TIMEOUT = 60 * 60 * 24 * 1
 ACCOUNT_FORMS = {
     "login": "allauth.account.forms.LoginForm",
     "add_email": "allauth.account.forms.AddEmailForm",
@@ -220,11 +224,18 @@ LOG_FILE = BASE_DIR / ".." / "appstore.log"
 LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,
+    "formatters": {
+        "timestamp": {
+            "format": "{asctime} {levelname} {message}",
+            "style": "{",
+        },
+    },
     "handlers": {
         "file": {
             "level": LOG_LEVEL,
             "class": "logging.FileHandler",
             "filename": LOG_FILE,
+            "formatter": "timestamp",
         },
     },
     "loggers": {
@@ -342,3 +353,7 @@ NEXTCLOUD_FROM_EMAIL = "appstore@nextcloud.com"
 NEXTCLOUD_INTEGRATIONS_APPROVAL_EMAILS = ["marketing-team@nextcloud.com"]
 
 DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
+
+# Account login bruteforce
+ACCOUNT_LOGIN_ATTEMPTS_LIMIT = 10
+ACCOUNT_LOGIN_ATTEMPTS_TIMEOUT = 3600  # 1 hour in seconds

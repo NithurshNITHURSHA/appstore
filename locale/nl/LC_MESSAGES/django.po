@@ -24,15 +24,16 @@
 # EWouters, 2021
 # Sebastiaan Veld <sebastiaan.veld@virtfields.nl>, 2022
 # Michel Heusschen, 2023
+# W J <transifex@woutje.be>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-18 02:36+0000\n"
+"POT-Creation-Date: 2023-09-06 03:13+0000\n"
 "PO-Revision-Date: 2016-09-05 12:43+0000\n"
-"Last-Translator: Michel Heusschen, 2023\n"
+"Last-Translator: W J <transifex@woutje.be>, 2023\n"
 "Language-Team: Dutch (https://app.transifex.com/nextcloud/teams/64236/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -598,6 +599,8 @@ msgstr "Nextcloud releases"
 
 #: nextcloudappstore/core/templates/403.html:4
 #: nextcloudappstore/core/templates/403.html:8
+#: nextcloudappstore/core/templates/429.html:4
+#: nextcloudappstore/core/templates/429.html:8
 msgid "Forbidden"
 msgstr "Verboden"
 
@@ -616,6 +619,10 @@ msgstr "Pagina niet gevonden"
 #: nextcloudappstore/core/templates/404.html:10
 msgid "The page you are looking for does not exist!"
 msgstr "De pagina die je wilt bekijken bestaat niet!"
+
+#: nextcloudappstore/core/templates/429.html:10
+msgid "Too many tries. Try again in a few minutes."
+msgstr ""
 
 #: nextcloudappstore/core/templates/account/email/email_confirmation_message.txt:1
 #, python-format
@@ -1333,6 +1340,9 @@ msgid ""
 "you to check in with you about your plans or to ask for feedback on our "
 "developer program."
 msgstr ""
+"Ik ga akkoord met het verzamelen van mijn persoonlijke gegevens. Zo kunnen "
+"we je contacteren over jouw plannen, of voor feedback over ons developer "
+"programma."
 
 #: nextcloudappstore/scaffolding/forms.py:82
 #: nextcloudappstore/user/templates/user/integrations.html:13

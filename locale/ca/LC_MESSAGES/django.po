@@ -21,7 +21,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-18 02:36+0000\n"
+"POT-Creation-Date: 2023-09-08 02:54+0000\n"
 "PO-Revision-Date: 2016-09-05 12:43+0000\n"
 "Last-Translator: Marc Riera <marcriera@softcatala.org>, 2023\n"
 "Language-Team: Catalan (https://app.transifex.com/nextcloud/teams/64236/ca/)\n"
@@ -93,12 +93,12 @@ msgid ""
 "rel=\"noreferrer noopener\">certificate repository</a> (follow the README). "
 "You can generate the CSR by executing the following command:"
 msgstr ""
-"Normalment s'emmagatzema en ~/.nextcloud/certificates/APP_ID.crt on APP_ID "
-"és l'identificador de la vostra aplicació. Si no teniu un certificat, primer"
+"Normalment, s'emmagatzema en el fitxer ~/.nextcloud/certificates/APP_ID.crt,"
+" on APP_ID és l'ID de la vostra aplicació. Si no teniu un certificat, primer"
 " heu de crear una sol·licitud de signatura de certificat (CSR), que s'haurà "
 "de publicar al <a href=\"https://github.com/nextcloud/app-certificate-"
-"requests\" rel=\"noreferrer noopener\">repositori del certificat </a> "
-"(llegiu el README). Podeu generar la CSR tot executant la següent ordre:"
+"requests\" rel=\"noreferrer noopener\">repositori de certificats </a> "
+"(llegiu el fitxer README). Podeu generar la CSR executant l'ordre següent:"
 
 #: nextcloudappstore/core/forms.py:59
 msgid "Signature over your app's ID"
@@ -114,8 +114,8 @@ msgid ""
 "<b>Important</b>: Changing the language will clear your current comment. "
 "Changes will not be saved!"
 msgstr ""
-"<b>Important</b>: si es canvia d'idioma se suprimirà el vostre comentari "
-"actual. Els canvis no es desaran!"
+"<b>Important</b>: Si canvieu de llengua, se suprimiran els comentaris "
+"actuals. No es desaran els canvis!"
 
 #: nextcloudappstore/core/forms.py:84
 msgid "Comment"
@@ -141,7 +141,7 @@ msgstr "Nom"
 
 #: nextcloudappstore/core/models.py:83
 msgid "Rendered app name for users"
-msgstr "Nom d'aplicació mostrada per a usuaris"
+msgstr "Nom d'aplicació que es mostra als usuaris"
 
 #: nextcloudappstore/core/models.py:85
 #: nextcloudappstore/scaffolding/forms.py:63
@@ -151,7 +151,7 @@ msgstr "Resum"
 
 #: nextcloudappstore/core/models.py:85
 msgid "Short text describing the app's purpose"
-msgstr "Text breu per descriure l'aplicació proposada"
+msgstr "Descripció breu de la finalitat de l'aplicació"
 
 #: nextcloudappstore/core/models.py:87 nextcloudappstore/core/models.py:470
 #: nextcloudappstore/scaffolding/forms.py:68
@@ -169,17 +169,17 @@ msgstr "URL de documentació d'usuari"
 
 #: nextcloudappstore/core/models.py:91
 msgid "Admin documentation URL"
-msgstr "URL de documentació de l'Administrador"
+msgstr "URL de documentació d'administració"
 
 #: nextcloudappstore/core/models.py:92
 msgid "Developer documentation URL"
-msgstr "URL de documentació del desenvolupador"
+msgstr "URL de documentació de desenvolupament"
 
 #: nextcloudappstore/core/models.py:93
 #: nextcloudappstore/scaffolding/forms.py:53
 #: nextcloudappstore/scaffolding/forms.py:85
 msgid "Issue tracker URL"
-msgstr "URL de gestor d'errors"
+msgstr "URL del seguiment d'errors"
 
 #: nextcloudappstore/core/models.py:94 nextcloudappstore/core/models.py:323
 #: nextcloudappstore/core/templates/app/detail.html:101
@@ -193,12 +193,12 @@ msgstr "Fòrum"
 #: nextcloudappstore/core/models.py:96 nextcloudappstore/core/models.py:358
 #: nextcloudappstore/core/models.py:464
 msgid "Created at"
-msgstr "Creat a"
+msgstr "Data de creació"
 
 #: nextcloudappstore/core/models.py:97 nextcloudappstore/core/models.py:359
 #: nextcloudappstore/core/models.py:465
 msgid "Updated at"
-msgstr "Pujat a"
+msgstr "Data de pujada"
 
 #: nextcloudappstore/core/models.py:99
 msgid "App owner"
@@ -207,7 +207,7 @@ msgstr "Propietari de l'aplicació"
 #: nextcloudappstore/core/models.py:102
 #: nextcloudappstore/core/templates/app/detail.html:84
 msgid "Co-Maintainers"
-msgstr "Co-mantenidors"
+msgstr "Comantenidors"
 
 #: nextcloudappstore/core/models.py:104 nextcloudappstore/core/models.py:335
 msgid "App authors"
@@ -222,24 +222,24 @@ msgstr "Destacada"
 #: nextcloudappstore/core/models.py:106
 #: nextcloudappstore/core/templates/app/detail.html:81
 msgid "Recent rating"
-msgstr "Puntuació més recent"
+msgstr "Valoracions recents"
 
 #: nextcloudappstore/core/models.py:107
 #: nextcloudappstore/core/templates/app/detail.html:79
 msgid "Overall rating"
-msgstr "Valoració global"
+msgstr "Valoracions globals"
 
 #: nextcloudappstore/core/models.py:108
 msgid "Number of recently submitted ratings"
-msgstr "Nombre de qualificacions presentades recentment"
+msgstr "Nombre de valoracions enviades recentment"
 
 #: nextcloudappstore/core/models.py:109
 msgid "Number of overall submitted ratings"
-msgstr "Nombre total de qualificacions presentades"
+msgstr "Nombre total de valoracions enviades"
 
 #: nextcloudappstore/core/models.py:110
 msgid "Last release at"
-msgstr "Darrera versió al"
+msgstr "Data de la darrera versió"
 
 #: nextcloudappstore/core/models.py:111
 #: nextcloudappstore/core/templates/app/releases.html:39
@@ -255,17 +255,17 @@ msgid ""
 "If enabled, a user can try to register the same app again using the public "
 "certificate and signature. If he does, the app will be transferred to him."
 msgstr ""
-"Si està habilitat, un usuari pot intentar registrar la mateixa app una altra"
-" vegada utilitzant el certificat públic i signatura. Si ho fa, l'aplicació "
-"es transferirà cap a ell."
+"Si s'habilita, un usuari pot intentar registrar la mateixa aplicació una "
+"altra vegada utilitzant el certificat públic i la signatura. Si ho fa, se li"
+" transferirà l'aplicació."
 
 #: nextcloudappstore/core/models.py:121
 msgid "Integration (i.e. Outlook plugin)"
-msgstr "Integració (és a dir, connector de l'Outlook)"
+msgstr "Integració (p. ex., connector de l'Outlook)"
 
 #: nextcloudappstore/core/models.py:122
 msgid "Used to approve integrations"
-msgstr "S'usa per aprovar integracions"
+msgstr "S'utilitza per a aprovar les integracions"
 
 #: nextcloudappstore/core/models.py:125 nextcloudappstore/core/models.py:269
 #: nextcloudappstore/core/models.py:340 nextcloudappstore/core/models.py:419
@@ -286,27 +286,27 @@ msgstr "Usuari"
 #: nextcloudappstore/core/models.py:271
 #: nextcloudappstore/core/templates/app/list.html:15
 msgid "Rating"
-msgstr "Puntuació"
+msgstr "Valoració"
 
 #: nextcloudappstore/core/models.py:271
 msgid "Rating from 0.0 (worst) to 1.0 (best)"
-msgstr "Puntua des de 0.0 (pitjor) a 1.0 (millor)"
+msgstr "Valoració del 0 (pitjor) a l'1 (millor)"
 
 #: nextcloudappstore/core/models.py:275
 msgid "Rating comment"
-msgstr "Comenta la puntuació"
+msgstr "Comentari de la valoració"
 
 #: nextcloudappstore/core/models.py:275
 msgid "Rating comment in Markdown"
-msgstr "Comentari de qualificació en Markdown"
+msgstr "Comentari de la valoració en Markdown"
 
 #: nextcloudappstore/core/models.py:281
 msgid "App rating"
-msgstr "Puntuació de l'aplicació"
+msgstr "Valoració de l'aplicació"
 
 #: nextcloudappstore/core/models.py:282
 msgid "App ratings"
-msgstr "Puntuacions de l'aplicació"
+msgstr "Valoracions de l'aplicació"
 
 #: nextcloudappstore/core/models.py:322
 msgid "Full name"
@@ -314,7 +314,7 @@ msgstr "Nom complet"
 
 #: nextcloudappstore/core/models.py:324 nextcloudappstore/user/forms.py:78
 msgid "Email"
-msgstr "Correu"
+msgstr "Adreça electrònica"
 
 #: nextcloudappstore/core/models.py:334
 msgid "App author"
@@ -326,11 +326,11 @@ msgstr "Versió"
 
 #: nextcloudappstore/core/models.py:339
 msgid "Version follows Semantic Versioning"
-msgstr "La versió segueix el Versionat Semàntic"
+msgstr "La versió segueix la numeració semàntica"
 
 #: nextcloudappstore/core/models.py:343 nextcloudappstore/core/models.py:565
 msgid "PHP extension dependency"
-msgstr "Extensió depenent de PHP"
+msgstr "Dependència d'extensió del PHP"
 
 #: nextcloudappstore/core/models.py:346 nextcloudappstore/core/models.py:532
 msgid "Database dependency"
@@ -342,36 +342,36 @@ msgstr "Llicència"
 
 #: nextcloudappstore/core/models.py:349
 msgid "Shell command dependency"
-msgstr "Dependència de la ordre Shell"
+msgstr "Dependència d'ordre de la línia d'ordres"
 
 #: nextcloudappstore/core/models.py:350
 msgid "PHP version requirement"
-msgstr "Versió requerida de PHP"
+msgstr "Requisit de versió del PHP"
 
 #: nextcloudappstore/core/models.py:351
 msgid "Platform version requirement"
-msgstr "Versió requerida de la plataforma"
+msgstr "Requisit de versió de la plataforma"
 
 #: nextcloudappstore/core/models.py:352
 msgid "PHP version requirement (raw)"
-msgstr "Versió requerida de PHP (en brut)"
+msgstr "Requisit de versió del PHP (sense processar)"
 
 #: nextcloudappstore/core/models.py:353
 msgid "Platform version requirement (raw)"
-msgstr "Versió requerida de la plataforma (en brut)"
+msgstr "Requisit de versió de la plataforma (sense processar)"
 
 #: nextcloudappstore/core/models.py:355
 #: nextcloudappstore/core/templates/app/releases.html:69
 msgid "Minimum Integer bits"
-msgstr "Mínim de bits integrats"
+msgstr "Mínim de bits per als enters"
 
 #: nextcloudappstore/core/models.py:355
 msgid "e.g. 32 for 32-bit Integers"
-msgstr "per exemple. 32 per a enters de 32 bits"
+msgstr "p. ex., 32 per a enters de 32 bits"
 
 #: nextcloudappstore/core/models.py:357
 msgid "Archive download URL"
-msgstr "URL per baixada de l'arxiu"
+msgstr "URL de baixada de l'arxiu"
 
 #: nextcloudappstore/core/models.py:360
 msgid "A signature using the app's certificate"
@@ -379,7 +379,7 @@ msgstr "Signatura amb el certificat de l'aplicació"
 
 #: nextcloudappstore/core/models.py:361
 msgid "Signature hashing algorithm"
-msgstr "Signatura d'algoritme d'hash"
+msgstr "Algorisme de hash de la signatura"
 
 #: nextcloudappstore/core/models.py:364
 #: nextcloudappstore/core/templates/app/releases.html:29
@@ -388,16 +388,16 @@ msgstr "Registre de canvis"
 
 #: nextcloudappstore/core/models.py:364
 msgid "The release changelog. Can contain Markdown"
-msgstr "Registre de canvis del llançament. Pot contenir Markdown"
+msgstr "Registre de canvis de la versió. Pot contenir Markdown."
 
 #: nextcloudappstore/core/models.py:370 nextcloudappstore/core/models.py:525
 #: nextcloudappstore/core/models.py:556
 msgid "App release"
-msgstr "Llançament de l'Aplicació"
+msgstr "Versió de l'aplicació"
 
 #: nextcloudappstore/core/models.py:371
 msgid "App releases"
-msgstr "Llançaments de l’Aplicació"
+msgstr "Versions de l'aplicació"
 
 #: nextcloudappstore/core/models.py:417
 msgid "Image URL"
@@ -405,7 +405,7 @@ msgstr "URL de la imatge"
 
 #: nextcloudappstore/core/models.py:418
 msgid "Small thumbnail"
-msgstr "Petita miniatura"
+msgstr "Miniatura petita"
 
 #: nextcloudappstore/core/models.py:420
 msgid "Ordering"
@@ -424,27 +424,27 @@ msgstr "Captures de pantalla"
 
 #: nextcloudappstore/core/models.py:443 nextcloudappstore/core/models.py:448
 msgid "Shell command"
-msgstr "Ordre de Shell"
+msgstr "Ordre de la línia d'ordres"
 
 #: nextcloudappstore/core/models.py:444
 msgid "Name of a required shell command, e.g. grep"
-msgstr "Nom d'una ordre de comandes necessària, per exemple, grep"
+msgstr "Nom d'una ordre de la línia d'ordres obligatòria, per exemple, grep"
 
 #: nextcloudappstore/core/models.py:449
 #: nextcloudappstore/core/templates/app/releases.html:61
 msgid "Shell commands"
-msgstr "Ordres de Shell"
+msgstr "Ordres de la línia d'ordres"
 
 #: nextcloudappstore/core/models.py:461 nextcloudappstore/core/models.py:487
 #: nextcloudappstore/core/models.py:507
 msgid "Id"
-msgstr "Id"
+msgstr "ID"
 
 #: nextcloudappstore/core/models.py:462
 msgid "Category ID used to identify the category an app is uploaded to"
 msgstr ""
-"ID de categoria utilitzat per identificar la categoria en la que una "
-"aplicació està publicada"
+"ID de categoria utilitzat per a identificar la categoria en què es publica "
+"una aplicació"
 
 #: nextcloudappstore/core/models.py:468
 msgid "Category name which will be presented to the user"
@@ -458,11 +458,11 @@ msgstr "Categories"
 
 #: nextcloudappstore/core/models.py:488
 msgid "Key which is used to identify a license"
-msgstr "Clau que s'utilitza per identificar una llicència"
+msgstr "Clau que s'utilitza per a identificar una llicència"
 
 #: nextcloudappstore/core/models.py:491
 msgid "License name which will be presented to the user"
-msgstr "Nom de llicència que es presentarà a l'usuari"
+msgstr "Nom de la llicència que es presentarà a l'usuari"
 
 #: nextcloudappstore/core/models.py:496
 #: nextcloudappstore/core/templates/app/releases.html:32
@@ -471,11 +471,11 @@ msgstr "Llicències"
 
 #: nextcloudappstore/core/models.py:508
 msgid "Key which is used to identify a database"
-msgstr "Clau que s'utilitza per identificar una base de dades"
+msgstr "Clau que s'utilitza per a identificar una base de dades"
 
 #: nextcloudappstore/core/models.py:511
 msgid "Database name which will be presented to the user"
-msgstr "Nom de base de dades que es presentarà a l'usuari"
+msgstr "Nom de la base de dades que es presentarà a l'usuari"
 
 #: nextcloudappstore/core/models.py:515 nextcloudappstore/core/models.py:527
 msgid "Database"
@@ -488,11 +488,11 @@ msgstr "Bases de dades"
 
 #: nextcloudappstore/core/models.py:528
 msgid "Database version requirement"
-msgstr "Versió requerida de la base de dades"
+msgstr "Requisit de versió de la base de dades"
 
 #: nextcloudappstore/core/models.py:529
 msgid "Database version requirement (raw)"
-msgstr "Versió requerida de la base de dades (en brut)"
+msgstr "Requisit de versió de la base de dades (sense processar)"
 
 #: nextcloudappstore/core/models.py:533
 msgid "Database dependencies"
@@ -500,17 +500,17 @@ msgstr "Dependències de la base de dades"
 
 #: nextcloudappstore/core/models.py:542
 msgid "e.g. libxml"
-msgstr "e.g. libxml"
+msgstr "p. ex., libxml"
 
 #: nextcloudappstore/core/models.py:542 nextcloudappstore/core/models.py:546
 #: nextcloudappstore/core/models.py:559
 msgid "PHP extension"
-msgstr "Extensió PHP"
+msgstr "Extensió del PHP"
 
 #: nextcloudappstore/core/models.py:547
 #: nextcloudappstore/core/templates/app/releases.html:75
 msgid "PHP extensions"
-msgstr "Extensions PHP"
+msgstr "Extensions del PHP"
 
 #: nextcloudappstore/core/models.py:561
 msgid "Extension version requirement"
@@ -589,6 +589,8 @@ msgstr "Llançaments del Nextcloud"
 
 #: nextcloudappstore/core/templates/403.html:4
 #: nextcloudappstore/core/templates/403.html:8
+#: nextcloudappstore/core/templates/429.html:4
+#: nextcloudappstore/core/templates/429.html:8
 msgid "Forbidden"
 msgstr "Prohibit"
 
@@ -607,6 +609,10 @@ msgstr "Pàgina no trobada"
 #: nextcloudappstore/core/templates/404.html:10
 msgid "The page you are looking for does not exist!"
 msgstr "La pàgina que esteu buscant no existeix!"
+
+#: nextcloudappstore/core/templates/429.html:10
+msgid "Too many tries. Try again in a few minutes."
+msgstr "S'han produït massa intents. Torneu-ho a provar d'aquí a uns minuts."
 
 #: nextcloudappstore/core/templates/account/email/email_confirmation_message.txt:1
 #, python-format

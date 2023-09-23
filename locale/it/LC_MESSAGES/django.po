@@ -10,17 +10,17 @@
 # Claudio Driussi <claudio.driussi@gmail.com>, 2017
 # Mark Ziegler <mark.ziegler@rakekniven.de>, 2021
 # Vincenzo Reale <vinx.reale@gmail.com>, 2021
-# Random_R, 2021
 # Andrea, 2023
+# Random_R, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-18 02:36+0000\n"
+"POT-Creation-Date: 2023-09-14 02:53+0000\n"
 "PO-Revision-Date: 2016-09-05 12:43+0000\n"
-"Last-Translator: Andrea, 2023\n"
+"Last-Translator: Random_R, 2023\n"
 "Language-Team: Italian (https://app.transifex.com/nextcloud/teams/64236/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -586,6 +586,8 @@ msgstr "Rilasci Nextcloud"
 
 #: nextcloudappstore/core/templates/403.html:4
 #: nextcloudappstore/core/templates/403.html:8
+#: nextcloudappstore/core/templates/429.html:4
+#: nextcloudappstore/core/templates/429.html:8
 msgid "Forbidden"
 msgstr "Vietato"
 
@@ -604,6 +606,10 @@ msgstr "Pagina non trovata"
 #: nextcloudappstore/core/templates/404.html:10
 msgid "The page you are looking for does not exist!"
 msgstr "La pagina che stai cercando non esiste!"
+
+#: nextcloudappstore/core/templates/429.html:10
+msgid "Too many tries. Try again in a few minutes."
+msgstr "Troppi tentativi. Riprova fra qualche minuto."
 
 #: nextcloudappstore/core/templates/account/email/email_confirmation_message.txt:1
 #, python-format
